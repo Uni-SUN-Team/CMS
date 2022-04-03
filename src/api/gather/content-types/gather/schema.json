@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gathers",
+  "info": {
+    "singularName": "gather",
+    "pluralName": "gathers",
+    "displayName": "Gather"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "gather_name": {
+      "type": "string",
+      "required": true
+    },
+    "gather_link": {
+      "type": "string",
+      "required": true
+    },
+    "thumnail": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

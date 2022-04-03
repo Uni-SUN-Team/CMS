@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_home_component_size_actives",
+  "info": {
+    "displayName": "component_size_active",
+    "icon": "braille"
+  },
+  "options": {},
+  "attributes": {
+    "active": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "size": {
+      "type": "integer",
+      "default": 1,
+      "max": 50,
+      "min": 1
+    }
+  }
+}
