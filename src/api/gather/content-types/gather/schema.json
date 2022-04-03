@@ -4,7 +4,8 @@
   "info": {
     "singularName": "gather",
     "pluralName": "gathers",
-    "displayName": "Gather"
+    "displayName": "Gather",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,11 +21,17 @@
       "required": true
     },
     "thumnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "in_room": {
+      "type": "biginteger",
+      "default": "0",
+      "min": "0"
     }
   }
 }

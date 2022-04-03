@@ -1,5 +1,5 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "homes",
   "info": {
     "singularName": "home",
@@ -58,7 +58,7 @@
       "type": "boolean",
       "default": false
     },
-    "course_recomment": {
+    "course_recommend": {
       "type": "component",
       "repeatable": false,
       "pluginOptions": {
