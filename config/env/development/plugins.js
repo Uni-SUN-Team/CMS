@@ -3,9 +3,9 @@ module.exports = {
     config: {
       provider: "strapi-provider-upload-google-cloud-storage",
       providerOptions: {
-        bucketName: "unisun-345117.appspot.com",
+        bucketName: "unison-dev",
         publicFiles: true,
-        uniform: false,
+        uniform: true,
         serviceAccount: {
           type: "service_account",
           project_id: "unisun-345117",
@@ -21,7 +21,7 @@ module.exports = {
           client_x509_cert_url:
             "https://www.googleapis.com/robot/v1/metadata/x509/unisun-345117%40appspot.gserviceaccount.com",
         },
-        baseUrl: "https://storage.googleapis.com/unisun-345117.appspot.com",
+        baseUrl: "https://storage.googleapis.com/unison-dev",
         basePath: "",
       },
       breakpoints: {

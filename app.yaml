@@ -20,5 +20,10 @@ env_variables:
   DATABASE_USER: 'urquhmotrdhwqg'
   DATABASE_PASSWORD: 'efad4bb2169e67ddaa17c21aba5c76efc6a9daa6a06310949eba9a006bf258da'
   INSTANCE_CONNECTION_NAME: 'unisun-345117:asia-southeast1:unisun'
+  BUCKET_NAME: "unisun-345117.appspot.com"
 beta_settings:
   cloud_sql_instances: 'unisun-345117:asia-southeast1:unisun'
+handlers:
+- url: /(.*\.(gif|png|jpg|mp4))$
+  static_files: public/uploads/\1
+  upload: public/uploads/.*\.(gif|png|jpg|mp4)$

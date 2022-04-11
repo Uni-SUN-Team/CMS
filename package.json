@@ -15,9 +15,13 @@
     "@strapi/plugin-graphql": "^4.1.7",
     "@strapi/plugin-i18n": "4.1.7",
     "@strapi/plugin-users-permissions": "4.1.7",
+    "@strapi/provider-upload-local": "^4.1.7",
     "@strapi/strapi": "4.1.7",
     "@types/react-router-dom": "^5.3.3",
+    "formidable": "v3",
     "jshint": "^2.13.4",
+    "koa": "^2.13.4",
+    "koa-body": "^4.2.0",
     "pg": "^8.6.0",
     "react-router-dom": "^6.3.0",
     "strapi-plugin-comments": "^2.0.10",
@@ -39,5 +43,8 @@
     "node": ">=12.x.x <=16.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "resolutions": {
+    "formidable": "1.1.1"
+  }
 }
