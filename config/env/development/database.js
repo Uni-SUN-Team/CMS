@@ -4,7 +4,7 @@ module.exports = ({ env }) => ({
     connection: {
       host: env("HOST_DB"),
       port: env.int("DATABASE_PORT", 5432),
-      database: env("DATABASE_NAME", "unisundevdb"),
+      database: env("DATABASE_NAME", "unisuncmsdevdb"),
       user: env("DATABASE_USERNAME", "urquhmotrdhwqg"),
       password: env(
         "DATABASE_PASSWORD",
