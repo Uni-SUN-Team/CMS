@@ -71,3 +71,24 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build_and_push
+    
+    steps:
+      - name: Deploy to Server via SSH action
+        uses: appleboy/ssh-action@v0.1.3
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSHKEY }}
+          script: |
+            # Stop running container
+            docker stop unisun_cms
+            # Remove old container
+            docker rm unisun_cms
+            # Pull update new image
+            docker pull narawich/unisun.cms
+            # Run a new container from a new image
+            cd /home/unisun/cms
+            docker-compose up -d
