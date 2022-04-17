@@ -103,5 +103,8 @@ dist
 # TernJS port file
 .tern-port
 
-# Build file
-build/
+# Build folder
+build
+
+# yarn file
+yarn.lock

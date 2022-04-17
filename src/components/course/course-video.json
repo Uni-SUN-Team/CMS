@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_course_course_videos",
+  "info": {
+    "displayName": "course_video",
+    "icon": "photo-video"
+  },
+  "options": {},
+  "attributes": {
+    "video_name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "short_decription": {
+      "type": "text"
+    },
+    "content": {
+      "allowedTypes": [
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "content_heighlight": {
+      "allowedTypes": [
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "class_attachment": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": false
+    }
+  }
+}
