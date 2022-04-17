@@ -82,12 +82,10 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSHKEY }}
           script: |
-            # Stop running container
-            docker stop unisun_cms
-            # Remove old container
-            docker rm unisun_cms
-            # Pull update new image
-            docker pull narawich/unisun.cms
-            # Run a new container from a new image
             cd /home/unisun/cms
+            # Stop running container
+            docker-compose down -v
+            # Pull update new image
+            docker image rm -f narawich/unisun.cms:latest
+            # Run a new container from a new image
             docker-compose up -d
