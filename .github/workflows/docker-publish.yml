@@ -15,7 +15,7 @@ on:
 
 env:
   # Use docker.io for Docker Hub if empty
-  REGISTRY: narawich/unisun
+  REGISTRY: registry.hub.docker.com
   # github.repository as <account>/<repo>
   IMAGE_NAME: narawich/unisun:cms-latest
 
@@ -55,7 +55,7 @@ jobs:
         with:
           registry: ${{ env.REGISTRY }}
           username: narawich
-          password: -Ball-CPE290821-
+          password: 9a56ad5f-6f48-4310-a0b0-f134bab8e3be
 
       # Extract metadata (tags, labels) for Docker
       # https://github.com/docker/metadata-action
