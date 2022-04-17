@@ -7,17 +7,13 @@ name: Docker
 
 on:
   push:
-    branches: [ develop ]
-    # Publish semver tags as releases.
     tags: [ 'v*.*.*' ]
-  pull_request:
-    branches: [ develop ]
 
 env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: registry.hub.docker.com
   # github.repository as <account>/<repo>
-  IMAGE_NAME: narawich/unisun
+  IMAGE_NAME: narawich/unisun.cms
 
 
 jobs:
@@ -73,5 +69,5 @@ jobs:
         with:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
-          tags: cms-latest
+          tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
