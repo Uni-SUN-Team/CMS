@@ -2,7 +2,7 @@ version: '3.1'
 
 services:
   cms:
-    image: narawich/unisun:cms-latest
+    image: narawich/unisun.cms:${TAG}
     container_name: cms
     ports:
       - 1337:1337
