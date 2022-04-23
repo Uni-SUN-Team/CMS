@@ -13,18 +13,12 @@
     "timestamps": true
   },
   "attributes": {
-    "username": {
-      "type": "string",
-      "minLength": 3,
-      "unique": true,
-      "configurable": false,
-      "required": true
-    },
     "email": {
       "type": "email",
       "minLength": 6,
       "configurable": false,
-      "required": true
+      "required": true,
+      "unique": true
     },
     "provider": {
       "type": "string",
@@ -82,10 +76,7 @@
     },
     "gender": {
       "type": "enumeration",
-      "enum": [
-        "Male",
-        "Femail"
-      ],
+      "enum": ["Male", "Femail"],
       "enumName": "gender"
     },
     "telephone": {
