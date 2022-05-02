@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_home_wywg_list_details",
+  "info": {
+    "displayName": "wywg_list_detail",
+    "icon": "list"
+  },
+  "options": {},
+  "attributes": {
+    "wywg_detail": {
+      "type": "text",
+      "required": true
+    },
+    "wywg_image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
