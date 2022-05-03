@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_couse_video_details",
+  "info": {
+    "displayName": "video_detail",
+    "icon": "file-video"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 255,
+      "minLength": 6
+    },
+    "description": {
+      "type": "text",
+      "maxLength": 500
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "video_content": {
+      "allowedTypes": [
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "video_preview": {
+      "allowedTypes": [
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "file": {
+      "allowedTypes": [
+        "files",
+        "audios",
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

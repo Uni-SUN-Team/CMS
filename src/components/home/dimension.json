@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_home_dimensions",
+  "info": {
+    "displayName": "dimension",
+    "icon": "equals"
+  },
+  "options": {},
+  "attributes": {
+    "status": {
+      "type": "boolean",
+      "default": false
+    },
+    "size": {
+      "type": "biginteger",
+      "default": "0",
+      "min": "0"
+    }
+  }
+}
