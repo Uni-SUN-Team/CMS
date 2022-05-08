@@ -7,7 +7,7 @@ ENV JWT_SECRET=aSiAZgPRmmw7gN7p9WeQxQ==
 ENV API_TOKEN_SALT=RtgRxmiE7vT1XiKH9SQZAA==
 ENV ADMIN_JWT_SECRET=IcRnNpluhp7IXYVqhlCkaA==
 ENV URL=https://cms.unisun.dynu.com
-ENV MEILISEARCH_HOST=https://meilisearch.unisun.dynu.com
+ENV MEILISEARCH_HOST=http://meilisearch
 ENV MEILISEARCH_SECRET_KEY=4)&}^8&=G3d*HvxF
 
 WORKDIR /usr/src/app
