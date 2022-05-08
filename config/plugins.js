@@ -1,4 +1,4 @@
-module.exports = {
+module.exports = ({ env }) => ({
   upload: {
     config: {
       provider: "local",
@@ -14,4 +14,12 @@ module.exports = {
       },
     },
   },
-};
+  meilisearch: {
+    config: {
+      // Your meili host
+      host: env("MEILISEARCH_HOST"),
+      // Your master key or private key
+      apiKey: env("MEILISEARCH_SECRET_KEY"),
+    },
+  },
+});
