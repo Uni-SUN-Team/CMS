@@ -22,4 +22,21 @@ module.exports = ({ env }) => ({
       apiKey: env("MEILISEARCH_SECRET_KEY"),
     },
   },
+  sentry: {
+    enabled: env("NODE_ENV") === "production",
+    config: {
+      dsn: env("SENTRY_DSN"),
+      sendMetadata: true,
+    },
+  },
+  transformer: {
+    enabled: true,
+    config: {
+      prefix: "/api/",
+      responseTransforms: {
+        removeAttributesKey: true,
+        removeDataKey: true,
+      },
+    },
+  },
 });
