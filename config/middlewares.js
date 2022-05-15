@@ -41,7 +41,12 @@ module.exports = [
       },
     },
   },
-  "strapi::session",
+  {
+    name: "strapi::session",
+    config: {
+      secure: false,
+    },
+  },
   "strapi::favicon",
   "strapi::public",
 ];
