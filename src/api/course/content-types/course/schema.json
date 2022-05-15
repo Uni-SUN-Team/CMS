@@ -116,6 +116,16 @@
       "type": "uid",
       "targetField": "title",
       "required": true
+    },
+    "user_in_class": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "biginteger",
+      "default": "0",
+      "min": "0"
     }
   }
 }
