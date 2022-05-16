@@ -5,4 +5,7 @@ module.exports = ({ env }) => ({
     keys: env.array("APP_KEYS"),
   },
   url: env("URL"),
+  admin: {
+    url: "/plugins/graphs-builder",
+  },
 });
