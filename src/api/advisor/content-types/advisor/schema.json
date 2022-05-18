@@ -121,6 +121,24 @@
           "localized": true
         }
       }
+    },
+    "job_title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text",
+      "minLength": 6
+    },
+    "quip": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text",
+      "minLength": 6
     }
   }
 }
