@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "signin_cover_images",
+  "info": {
+    "singularName": "signin-cover-image",
+    "pluralName": "signin-cover-images",
+    "displayName": "Signin cover image"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "cover_image": {
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}
