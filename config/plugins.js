@@ -22,6 +22,24 @@ module.exports = ({ env }) => ({
       apiKey: env("MEILISEARCH_SECRET_KEY"),
     },
   },
+  email: {
+    config: {
+      provider: "nodemailer",
+      providerOptions: {
+        host: env("SMTP_SERVER"),
+        port: env("SMTP_PORT"),
+        auth: {
+          user: env("SMTP_USER"),
+          pass: env("SMTP_PASS"),
+        },
+        // ... any custom nodemailer options
+      },
+      settings: {
+        defaultFrom: "NarawichSaphimarn@gmail.com",
+        defaultReplyTo: "NarawichSaphimarn@gmail.com",
+      },
+    },
+  },
   sentry: {
     enabled: env("NODE_ENV") === "production",
     config: {

@@ -11,6 +11,10 @@ ENV MEILISEARCH_HOST=https://meilisearch.unisun.dynu.com
 ENV MEILISEARCH_SECRET_KEY=4)&}^8&=G3d*HvxF
 ENV NODE_ENV=production
 ENV SENTRY_DSN=https://1aa1f23714304a68ae8de3ef0beef563@o1238561.ingest.sentry.io/6389420
+ENV SMTP_SERVER=smtp-relay.sendinblue.com
+ENV SMTP_PORT=587
+ENV SMTP_USER=narawichsaphimarn@gmail.com
+ENV SMTP_PASS=DcvLn2RkI5g9b6x1
 
 WORKDIR /usr/src/app
 COPY package.json ./

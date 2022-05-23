@@ -1,6 +1,5 @@
 module.exports = (plugin) => {
   plugin.controllers.auth.refreshToken = async (ctx) => {
-    // comment out next lines, and refresh the request body's token like {token: 'xxx'}
     const { token } = ctx.request.body;
     const payload = await strapi.plugins[
       "users-permissions"
