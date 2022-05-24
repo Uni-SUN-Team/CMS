@@ -5,7 +5,7 @@ module.exports = (plugin) => {
       "users-permissions"
     ].services.jwt.verify(token);
     const newJwt = strapi.plugins["users-permissions"].services.jwt.issue({
-      id: payload.id,
+      id: payload.uid,
     });
     return { jwt: newJwt };
   };
