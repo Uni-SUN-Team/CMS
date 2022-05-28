@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_seo_share_images",
+  "info": {
+    "displayName": "shareImage",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "alt": {
+      "type": "string"
+    },
+    "media": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

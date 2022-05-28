@@ -126,6 +126,16 @@
       "type": "biginteger",
       "default": "0",
       "min": "0"
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "seo.seo"
     }
   }
 }

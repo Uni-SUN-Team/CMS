@@ -139,6 +139,16 @@
       },
       "type": "text",
       "minLength": 6
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "seo.seo"
     }
   }
 }
