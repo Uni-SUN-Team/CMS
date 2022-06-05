@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_promotion_reduce_equal_to_the_numbers",
+  "info": {
+    "displayName": "Reduce equal to the number",
+    "icon": "equals",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "discount": {
+      "type": "decimal",
+      "min": 0,
+      "default": 0
+    }
+  }
+}

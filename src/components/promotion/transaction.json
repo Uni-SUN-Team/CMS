@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_promotion_transactions",
+  "info": {
+    "displayName": "transaction",
+    "icon": "percentage"
+  },
+  "options": {},
+  "attributes": {
+    "promotions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::promotion.promotion"
+    }
+  }
+}

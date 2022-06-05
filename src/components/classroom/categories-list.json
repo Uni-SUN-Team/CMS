@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_classroom_categories_lists",
+  "info": {
+    "displayName": "Categories list",
+    "icon": "book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    }
+  }
+}

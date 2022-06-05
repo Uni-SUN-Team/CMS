@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "promotions",
+  "info": {
+    "singularName": "promotion",
+    "pluralName": "promotions",
+    "displayName": "promotion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "Group": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "classroom.advisors-list",
+        "classroom.categories-list",
+        "classroom.subject-list"
+      ],
+      "max": 1,
+      "required": true
+    },
+    "Discount": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "promotion.reduce-by-difference",
+        "promotion.reduce-by-percentage",
+        "promotion.reduce-equal-to-the-number"
+      ],
+      "max": 1,
+      "required": true
+    }
+  }
+}

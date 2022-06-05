@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_promotion_reduce_by_differences",
+  "info": {
+    "displayName": "Reduce by difference",
+    "icon": "minus",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "discount": {
+      "type": "decimal",
+      "min": 0,
+      "default": 0
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_classroom_subject_lists",
+  "info": {
+    "displayName": "Subject list",
+    "icon": "bookmark",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "class_rooms": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::class-room.class-room"
+    }
+  }
+}

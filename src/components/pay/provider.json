@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_pay_providers",
+  "info": {
+    "displayName": "provider",
+    "icon": "archway"
+  },
+  "options": {},
+  "attributes": {
+    "bank": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::bank.bank"
+    }
+  }
+}

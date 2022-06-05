@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_classroom_advisors_lists",
+  "info": {
+    "displayName": "Advisors list",
+    "icon": "user-tie",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "advisors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::advisor.advisor"
+    }
+  }
+}

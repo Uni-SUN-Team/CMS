@@ -73,17 +73,6 @@
         }
       }
     },
-    "course_content": {
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "couse.video-detail",
-      "required": false
-    },
     "course_high_light": {
       "type": "media",
       "multiple": false,
@@ -136,6 +125,18 @@
         }
       },
       "component": "seo.seo"
+    },
+    "Course": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "couse.video-detail"
+      ],
+      "required": false
     }
   }
 }

@@ -286,4 +286,17 @@ module.exports = ({ env }) => ({
       },
     },
   },
+  scheduler: {
+    enabled: true,
+    config: {
+      model: "scheduler",
+    },
+  },
+  migrations: {
+    enabled: true,
+    config: {
+      autoStart: true,
+      migrationFolderPath: "migrations",
+    },
+  },
 });
