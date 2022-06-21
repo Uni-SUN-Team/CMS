@@ -109,7 +109,7 @@
       "targetField": "full_name",
       "required": true
     },
-    "thumnail": {
+    "thumbnail": {
       "type": "media",
       "multiple": false,
       "required": false,

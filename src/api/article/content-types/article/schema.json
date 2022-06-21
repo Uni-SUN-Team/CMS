@@ -42,7 +42,7 @@
       },
       "type": "text"
     },
-    "thumnail": {
+    "thumbnail": {
       "type": "media",
       "multiple": false,
       "required": false,

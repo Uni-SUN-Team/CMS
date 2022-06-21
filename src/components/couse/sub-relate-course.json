@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_couse_sub_relate_courses",
+  "info": {
+    "displayName": "SubRelateCourse",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "course": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::course.course"
+    },
+    "preview": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
