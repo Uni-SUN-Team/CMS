@@ -299,4 +299,7 @@ module.exports = ({ env }) => ({
       migrationFolderPath: "migrations",
     },
   },
+  "random-sort": {
+    enabled: true,
+  },
 });
