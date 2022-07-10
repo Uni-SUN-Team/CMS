@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_feedback_relation_advisors",
+  "info": {
+    "displayName": "relation-advisor",
+    "icon": "male"
+  },
+  "options": {},
+  "attributes": {
+    "advisor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::advisor.advisor"
+    }
+  }
+}

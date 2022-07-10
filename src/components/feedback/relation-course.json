@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_feedback_relation_courses",
+  "info": {
+    "displayName": "relation-course",
+    "icon": "book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "course": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::course.course"
+    }
+  }
+}

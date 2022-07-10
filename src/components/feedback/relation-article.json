@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_feedback_relation_articles",
+  "info": {
+    "displayName": "relation-article",
+    "icon": "atlas"
+  },
+  "options": {},
+  "attributes": {
+    "article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::article.article"
+    }
+  }
+}
