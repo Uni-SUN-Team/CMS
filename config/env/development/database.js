@@ -2,7 +2,7 @@ module.exports = ({ env }) => ({
   connection: {
     client: "postgres",
     connection: {
-      host: "unisun.dynu.com",
+      host: "unisun.accesscam.org",
       port: 5432,
       database: "unisuncmsdevdb",
       user: "urquhmotrdhwqg",
