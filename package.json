@@ -22,7 +22,6 @@
     "pg": "8.6.0",
     "sharp": "^0.30.4",
     "strapi-plugin-email-designer": "^2.1.1",
-    "strapi-plugin-local-image-sharp": "^1.1.0",
     "strapi-plugin-migrations": "^1.0.4",
     "strapi-plugin-populate-deep": "^0.1.2",
     "strapi-plugin-random-sort": "^0.0.3",
