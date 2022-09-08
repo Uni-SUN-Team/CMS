@@ -48,8 +48,7 @@
           "localized": true
         }
       },
-      "type": "richtext",
-      "maxLength": 500
+      "type": "richtext"
     },
     "thumbnail": {
       "type": "media",

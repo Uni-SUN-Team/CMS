@@ -66,8 +66,7 @@
           "localized": true
         }
       },
-      "type": "richtext",
-      "maxLength": 500
+      "type": "richtext"
     },
     "active": {
       "pluginOptions": {
