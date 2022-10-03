@@ -1,0 +1,16 @@
+version: "3.5"
+
+networks:
+  app:
+    name: unisun_network
+    driver: bridge
+
+services:
+  cms:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    hostname: cms
+    container_name: cms
+    networks:
+      - app

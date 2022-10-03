@@ -2,13 +2,15 @@ module.exports = ({ env }) => ({
   connection: {
     client: "postgres",
     connection: {
-      host: "postgres",
+      host: "ec2-3-225-110-188.compute-1.amazonaws.com",
       port: 5432,
-      database: "unisuncmsdevdb",
-      user: "urquhmotrdhwqg",
+      database: "d8q0obi77pcf62",
+      user: "eubrxqshtdljfn",
       password:
-        "efad4bb2169e67ddaa17c21aba5c76efc6a9daa6a06310949eba9a006bf258da",
-      ssl: false,
+        "288cc9f05bd8a89f9f8b3012772f78ce1ba7a36ade2deb27227f874cc9a8e7a9",
+      ssl: {
+        rejectUnauthorized: false,
+      },
     },
   },
 });
